@@ -1,34 +1,36 @@
 .outerContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #1A1A1D;
-}
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: #FFFFFF;
-  border-radius: 8px;
-  height: 60%;
-  width: 35%;
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  .outerContainer {
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(237, 237, 237);
   }
 
   .container {
-    width: 100%;
-    height: 100%;
+    background-image: url('https://external-preview.redd.it/rEwFriCkfAtjOb5b-23b4tGGVcuvfaBqamYNJrgxnLM.png?auto=webp&s=f3bf0b5c90e4c5fda12ff2139781c854554fd198');
+    box-shadow : 0 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     border-radius: 8px;
+    height: 60%;
+    width: 35%;
   }
-}
 
-@media (min-width: 480px) and (max-width: 1200px) {
-  .container {
-    width: 60%;
+  @media (min-width: 320px) and (max-width: 480px) {
+    .outerContainer {
+      height: 100%;
+    }
+  
+    .container {
+      width: 100%;
+      height: 100%;
+    }
   }
-}
+  
+  @media (min-width: 480px) and (max-width: 1200px) {
+    .container {
+      width: 50%;
+    }
+  }

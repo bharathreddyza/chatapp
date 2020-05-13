@@ -12,7 +12,9 @@ const Input = ({ setMessage, sendMessage, message }) => (
       onChange={({ target: { value } }) => setMessage(value)}
       onKeyPress={event => event.key === 'Enter' ? sendMessage(event) : null}
     />
-    <button className="sendButton" onClick={e => sendMessage(e)}>Send</button>
+    <button className="sendButton" onClick={e => sendMessage(e)}>
+    <img style={{width:"50px" ,position:'relative'}} src="https://listapa.com.br/site/images/send-button.svg"/>
+    </button>
   </form>
 )
 

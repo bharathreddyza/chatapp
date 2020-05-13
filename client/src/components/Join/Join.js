@@ -9,6 +9,8 @@ export default function SignIn() {
 
   return (
     <div className="joinOuterContainer">
+           <img style={{width:"100px"}} src="http://pngimg.com/uploads/whatsapp/whatsapp_PNG21.png"/>
+
       <div className="joinInnerContainer">
         <h1 className="heading">Join</h1>
         <div>
