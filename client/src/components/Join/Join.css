@@ -7,7 +7,7 @@
 
 }
 
-.joinOuterContainer {
+.outside {
   display: flexbox;
   justify-content: center;
   text-align: center;
@@ -46,11 +46,11 @@
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .joinOuterContainer {
+  .outside {
     height: 100%;
   }
 
-  .joinInnerContainer {
+  .inside {
     width: 90%;
   }
 

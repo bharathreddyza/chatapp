@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
 import queryString from 'query-string';
 import io from "socket.io-client";
+import React, { useState, useEffect } from "react";
 
 import TextContainer from '../TextContainer/TextContainer';
 import Messages from '../Messages/Messages';
@@ -17,9 +17,9 @@ const Chat = ({ location }) => {
   const [users, setUsers] = useState('');
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
-  const ENDPOINT = 'https://socket-io-chatappreact.herokuapp.com/';
-
-  useEffect(() => {
+    //  const ENDPOINT='localhost:5000'
+  const ENDPOINT = 'https://socket-io-chatappreact.herokuapp.com/'
+   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
 
     socket = io(ENDPOINT);
@@ -48,7 +48,7 @@ const Chat = ({ location }) => {
     event.preventDefault();
 
     if(message) {
-      socket.emit('sendMessage', message, () => setMessage(''));
+       socket.emit('sendMessage', message, () => setMessage(''));
     }
   }
 

@@ -22,6 +22,10 @@
   padding-left: 10px;
 }
 
+.chatlist{
+  background-color: rgb(132, 132, 165);
+
+}
 .textContainer h1 {
   margin-bottom: 0px;
 }

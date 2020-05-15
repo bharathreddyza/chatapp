@@ -21,16 +21,20 @@
 
 .messageContainer {
   display: flex;
-  justify-content: flex-end;
+   justify-content: flex-end;
   padding: 0 5%;
   margin-top: 3px;
 }
 
+.mg-10{
+  margin-left: 40%;
+}
 .sentText {
   display: flex;
+  justify-content: right;
   align-items: center;
   font-family: Helvetica;
-  color: #828282;
+  color: grey;
   letter-spacing: 0.3px;
 }
 
